@@ -168,6 +168,15 @@ rules:
     alternatives:
       - illegal marketplace
 
+  black-hole:
+    regex:
+      - /\bblack[\w_-]*hol\w*\b/gi
+    level: warning
+    alternatives:
+      - discard
+      - drop
+      - reject
+
   tradition:
     regex:
       - /\btradition\w*\b/gi
